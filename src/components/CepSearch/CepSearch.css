@@ -1,0 +1,128 @@
+.cep-search-container {
+  background-color: #ffffff;
+  border: 2px solid #e0e0e0;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cep-search-container h2 {
+  margin-top: 0;
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cep-form {
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-group input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 2px solid #ddd;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.3);
+}
+
+.form-group input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.form-group button {
+  padding: 0.75rem 2rem;
+  background-color: #3498db;
+  color: #ffffff;
+  border: 2px solid #3498db;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.form-group button:hover:not(:disabled) {
+  background-color: #2980b9;
+  border-color: #2980b9;
+}
+
+.form-group button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error-message {
+  background-color: #e74c3c;
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.cep-result {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  padding: 1.5rem;
+  border-radius: 4px;
+  margin-top: 1.5rem;
+  border: 1px solid #ddd;
+}
+
+.cep-result h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.result-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.result-item {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.result-item:last-child {
+  border-bottom: none;
+}
+
+.result-item strong {
+  display: inline-block;
+  min-width: 120px;
+}
+
+@media (max-width: 768px) {
+  .cep-search-container {
+    padding: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .form-group {
+    flex-direction: column;
+  }
+
+  .form-group button {
+    width: 100%;
+  }
+
+  .result-item strong {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+}

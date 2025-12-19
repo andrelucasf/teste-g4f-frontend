@@ -1,0 +1,19 @@
+# Ignore node_modules
+**node_modules**
+
+# Ignore development files
+*.md
+!README.md
+.git
+.gitignore
+.eslintrc.cjs
+.prettierrc
+vitest.config.ts
+
+# Ignore test files
+**/*.test.tsx
+**/*.test.ts
+**/tests/**
+
+# Ignore documentation
+docs/

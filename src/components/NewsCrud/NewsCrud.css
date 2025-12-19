@@ -1,0 +1,131 @@
+.news-crud-container {
+  background-color: #ffffff;
+  border: 2px solid #e0e0e0;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.news-header h2 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.5rem;
+  flex: 1;
+}
+
+.btn-add-news {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #27ae60, #2ecc71);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(46, 204, 113, 0.3);
+}
+
+.btn-add-news:hover {
+  background: linear-gradient(135deg, #229954, #27ae60);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(46, 204, 113, 0.4);
+}
+
+.search-section {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  padding: 1.5rem;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+  border: 1px solid #ddd;
+}
+
+.search-section h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.search-form {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.search-form input {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.75rem;
+  border: 2px solid #ddd;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.search-form button {
+  padding: 0.75rem 1.5rem;
+  background-color: #3498db;
+  color: #ffffff;
+  border: 2px solid #3498db;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.search-form button:hover {
+  background-color: #2980b9;
+  border-color: #2980b9;
+}
+
+.error-message {
+  background-color: #e74c3c;
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.25rem;
+  color: #7f8c8d;
+}
+
+.error-message {
+  background-color: #e74c3c;
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+  .news-crud-container {
+    padding: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .search-form {
+    flex-direction: column;
+  }
+
+  .search-form input,
+  .search-form button {
+    width: 100%;
+    min-width: unset;
+  }
+}
