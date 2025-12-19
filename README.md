@@ -89,7 +89,7 @@ teste-g4f-frontend/
 
 ```bash
 # Clonar repositório
-git clone <url-do-repositorio>
+git clone https://github.com/andrelucasf/teste-g4f-frontend
 cd teste-g4f-frontend
 
 # Instalar dependências
@@ -422,7 +422,3 @@ git tag -a v1.0.0 -m "Release v1.0.0"
 ## 📄 Licença
 
 Este projeto foi desenvolvido como teste técnico.
-
----
-
-**Desenvolvido com ❤️ usando React + TypeScript + Vite**
